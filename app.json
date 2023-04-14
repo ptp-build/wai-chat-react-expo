@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "basic-webview-usage",
-    "slug": "snack-32b01b19-3a99-4b21-a36d-76da465b5246",
+    "slug": "demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.wai.chat.demo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6b8a931c-a7d4-4aa3-904f-55ee26d9155c"
+      }
+    },
+    "owner": "wai.chat"
   }
 }
