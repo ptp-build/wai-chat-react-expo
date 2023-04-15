@@ -1,24 +1,26 @@
 import * as React from 'react';
 import { WebView } from 'react-native-webview';
-import { StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
+import { StyleSheet,Platform } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <>
-    <StatusBar style="light" />
-    <WebView
-      style={styles.container}
-      source={{ uri: 'https://wai.chat' }}
-    />
-    </>
+      <SafeAreaView style={styles.container}>
+        <WebView
+            style={styles.container}
+            source={{ uri: 'https://wai.chat' }}
+        />
+        <StatusBar style="auto" />
+      </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: Constants.statusBarHeight,
+    marginTop: Platform.select({
+      ios: 16
+    })
   },
 });

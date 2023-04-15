@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Wai",
-    "slug": "demo",
+    "slug": "wai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.wai.chat.demo"
+      "bundleIdentifier": "com.wai.chat.ios"
     },
     "androidStatusBar": {
       "translucent": true
@@ -29,14 +29,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.wai.chat.demo"
+      "package": "com.wai.chat.adr"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "6b8a931c-a7d4-4aa3-904f-55ee26d9155c"
+        "projectId": "8ec8f524-10de-4731-ad39-b94513325516"
       }
     },
     "owner": "wai.chat"
